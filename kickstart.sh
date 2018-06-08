@@ -268,7 +268,8 @@ then
     if [ "${HAS_BASH4}" = "1" ]
     then
         tmp="$(mktemp /tmp/netdata-kickstart-XXXXXX)"
-        url="https://raw.githubusercontent.com/firehol/netdata-demo-site/master/install-required-packages.sh"
+        #url="https://raw.githubusercontent.com/firehol/netdata-demo-site/master/install-required-packages.sh"
+        url="file:///tmp/install-required-packages.sh"
 
         progress "Downloading script to detect required packages..."
         if [ ! -z "${curl}" ]
